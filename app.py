@@ -62,7 +62,7 @@ number_emergency   = col2.number_input("number_emergency", 0, 50, 0)
 number_inpatient   = col2.number_input("number_inpatient", 0, 50, 0)
 number_diagnoses   = col2.number_input("number_diagnoses", 1, 16, 9)
 
-st.markdown("### Categorical / coded features your model expects")
+st.markdown("### Categorical Features")
 
 # These options match the common UCI Diabetes dataset encodings
 age_opt = ["[0-10)", "[10-20)", "[20-30)", "[30-40)", "[40-50)",
@@ -121,5 +121,6 @@ if st.button("Predict"):
         except Exception as e:
             st.error("Prediction failed. See details below:")
             st.exception(e)
+
 
 
